@@ -1,6 +1,8 @@
+import "../assets/allpages/Contact.css";
+
 const Contact = () => {
   return (
-    <>
+    <div className="contact">
       <h1>contact me </h1>
       <form>
         <label for="fname">Name</label>
@@ -16,7 +18,7 @@ const Contact = () => {
         <textarea id="message" name="message" rows="4" cols="30"></textarea>
         <br />
       </form>
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,41 @@
+.header {
+    padding: 3rem;
+}
+
+ .navbar-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20px;
+    padding: 0;
+
+}
+
+.navbar-list .nav-item {
+    font-size: x-large;
+    margin: 0 3rem;
+    animation: fadeIn 1.5s 2.5s forwards;
+    opacity: 0;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid black;
+}
+.nav-item a {
+    color: inherit;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+
+
