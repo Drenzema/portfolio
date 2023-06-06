@@ -1,0 +1,23 @@
+.works {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.works h1 {
+    text-align: center;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 768px) {
+    .works {
+        height: 200vh;
+    }
+}

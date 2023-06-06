@@ -1,76 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Sacramento&display=swap");
 
-.home {
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+.no-scroll {
+  overflow: hidden;
 }
 
-.home .name-container {
+.home {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+}
+
+.home .name {
+  position: relative;
+  display: inline-flex;
 }
 
 .home .name-details {
-  text-align: center;
   font-weight: lighter;
-  animation: fadeIn 1.5s 2.5s forwards;
   opacity: 0;
 }
 
-.name-container p {
+.home .name p {
   font-family: "Sacramento", cursive;
-  font-size: 170px;
-  margin: 0;
+  font-size: clamp(3rem, -0.1250rem + 15.7500vw, 12rem);
+  margin: 0 1rem;
 }
 
-.name-container .first-name {
-  animation: slideInLeft 1.25s ease-out;
-}
+@media only screen and (max-width: 767px) {
 
-.name-container .last-name {
-  animation: slideInRight 2s ease-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+  .home .name-details {
+    font-size: smaller;
   }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-10000px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(10000px);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
+  .home {
+    height: 110vh;
   }
 }

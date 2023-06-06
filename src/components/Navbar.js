@@ -1,13 +1,28 @@
-import "../assets/general/Navbar.css"
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+
+import "../assets/general/Navbar.css";
 
 const NavBar = () => {
   return (
     <div className="header">
       <nav className="navbar">
         <ul className="navbar-list">
-          <li className="nav-item"><a href="#about">about</a></li>
-          <li className="nav-item"><a href="#works">works</a></li>
-          <li className="nav-item"><a href="#contact">contact</a></li>
+          <li className="nav-item animate-slideIn">
+            <Link to="about" smooth={true} offset={-170} duration={500}>
+              about
+            </Link>
+          </li>
+          <li className="nav-item animate-slideIn">
+            <Link to="works" smooth={true} offset={-150} duration={500}>
+              works
+            </Link>
+          </li>
+          <li className="nav-item animate-slideIn">
+            <Link to="contact" smooth={true} offset={-150} duration={500}>
+              contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

@@ -2,7 +2,7 @@ import "../assets/allpages/Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact container" id="contact">
       <h1>contact me </h1>
       <form>
         <label for="fname">Name</label>

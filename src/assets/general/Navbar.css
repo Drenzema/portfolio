@@ -1,41 +1,56 @@
+/*---------------- Navbar styles ---------------- */
 .header {
-    padding: 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  align-items: center;
+  padding: 3rem 0;
+  background-color: rgb(254, 254, 254);
 }
 
- .navbar-list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 20px;
-    padding: 0;
-
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  padding: 0;
 }
 
 .navbar-list .nav-item {
-    font-size: x-large;
-    margin: 0 3rem;
-    animation: fadeIn 1.5s 2.5s forwards;
-    opacity: 0;
+  font-size: x-large;
+  margin: 0 3rem;
+  opacity: 0;
 }
 
+/*---------------- Navbar animations ---------------- */
 .nav-item:hover {
-    border-bottom: 2px solid black;
+  cursor: pointer;
 }
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease-in-out, right 0.3s ease-in-out;
+}
+.nav-item:hover::before {
+  width: 100%;
+  right: 0;
+}
+
 .nav-item a {
-    color: inherit;
+  color: inherit;
 }
 
-@keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
+@media only screen and (max-width: 767px) {
   
-    100% {
-      opacity: 1;
-    }
+.navbar-list .nav-item  {
+    font-size: 1em;
   }
-
-
-
-
-
+}

@@ -1,4 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 .about {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+.about-image {
+  opacity: 0;
+  text-align: center;
+}
+
+.flags {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.mexflag,
+.usflag {
+  margin: 0 10px; /* Adjust the margin value to increase or decrease the separation */
+}
+
+.avatar {
+  align-content: center;
+  width: 400px;
+  height: auto;
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.location img {
+  width: 25px;
+  height: auto;
+}
+
+.about-details {
+  margin-left: 8rem;
+}
+
+.about-details p {
+  margin: 1rem auto;
+  opacity: 0;
+  font-size: 1em;
+}
+
+.about-heading {
+  margin: auto;
+  width: max-content;
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  white-space: nowrap;
+  cursor: 0.4s step-end infinite alternate;
+}
+
+.about-heading::before,
+.about-heading::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.about-heading::before {
+  background: white;
+  animation: typewriter 1s steps(8) forwards;
+}
+.about-heading::after {
+  width: 0.12rem;
+  background: black;
+  animation: typewriter 1s steps(8) forwards,
+    cursor 0.4s step-end infinite alternate;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s 2.5s forwards;
+}
+
+/* Animations */
+@keyframes cursor {
+  50% {
+    visibility: hidden;
+  }
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .about {
+    display: block;
+    height: 120vh;
+  }
+
+  .avatar {
     width: 100%;
+    margin-top: 50px;
+  }
+
+  .about-details {
+    margin-top: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-details h1 {
+    width: 55%;
+    font-size: 25px;
+  }
+  .about-details p {
+    margin-top: 10px;
+    font-size: smaller;
+  }
+  .about-image.animate-slideIn {
+    animation-delay: 200ms;
+  }
+
+  .about-heading::before, 
+  .about-heading::after {
+    animation-delay: 300ms;
+  }
 }

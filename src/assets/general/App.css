@@ -1,0 +1,94 @@
+:root {
+  --typewriterspeed: 10s;
+  --typewriterChars: 20;
+}
+
+/*---------------- General styles ---------------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 70%;
+    max-width: 400px;
+    padding: 0;
+    margin: auto;
+  }
+}
+
+
+/*---------------- General animations ---------------- */
+.animate-fadeIn {
+  animation: fadeIn 1.5s 2.5s forwards;
+}
+
+.animate-fadeIn-fast{
+  animation: fadeIn 1.5s 1.5s forwards;
+}
+
+.animate-slideLeft {
+  animation: slideInLeft 1.25s ease-out;
+  -webkit-animation: slideInLeft 1.25s ease-out; /* Safari and Chrome */
+  -moz-animation: slideInLeft 1.25s ease-out; /* Firefox */
+  -o-animation: slideInLeft 1.25s ease-out; /* Opera */
+}
+
+.animate-slideRight {
+  animation: slideInRight 2s ease-out;
+  -webkit-animation: slideInRight 2s ease-out; /* Safari and Chrome */
+  -moz-animation: slideInRight 2s ease-out; /* Firefox */
+  -o-animation: slideInRight 2s ease-out; /* Opera */
+}
+
+.animate-slideIn {
+  animation: slideIn 1s 2.5s forwards;
+}
+
+.animate-slideIn-fast {
+  animation: slideIn 1s 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-10000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(10000px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
