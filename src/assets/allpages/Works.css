@@ -18,6 +18,7 @@
 
 @media (max-width: 768px) {
     .works {
-        height: 200vh;
+        height: 100vh;
+        margin-bottom: 50rem
     }
 }

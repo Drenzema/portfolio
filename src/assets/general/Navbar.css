@@ -18,15 +18,22 @@
   padding: 0;
 }
 
+.navbar-list li {
+  opacity: 0;
+}
+
 .navbar-list .nav-item {
   font-size: x-large;
   margin: 0 3rem;
-  opacity: 0;
 }
 
 /*---------------- Navbar animations ---------------- */
 .nav-item:hover {
   cursor: pointer;
+}
+
+.nav-item {
+  position: relative;
 }
 
 .nav-item::before {
@@ -44,13 +51,26 @@
   right: 0;
 }
 
+.nav-item.active::before {
+  width: 100%;
+  right: 0;
+}
+
+
 .nav-item a {
   color: inherit;
 }
 
 @media only screen and (max-width: 767px) {
-  
-.navbar-list .nav-item  {
+  .navbar-list .nav-item {
     font-size: 1em;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .nav-item::before {
+    transition: none;
   }
 }

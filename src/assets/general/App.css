@@ -5,11 +5,30 @@
 
 /*---------------- General styles ---------------- */
 .container {
-  max-width: 1200px;
+  max-width: 80rem;
   margin: 0 auto;
-  padding: 20px;
-
 }
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3em;
+  width: 100%;
+  background: rgb(254, 164, 164);
+  border-radius: 5px;
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: red;
+}
+
+@media only screen and  (max-width: 1297px){
+  .container {
+    max-width: 55rem;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .container {
     width: 70%;
@@ -19,13 +38,12 @@
   }
 }
 
-
 /*---------------- General animations ---------------- */
 .animate-fadeIn {
   animation: fadeIn 1.5s 2.5s forwards;
 }
 
-.animate-fadeIn-fast{
+.animate-fadeIn-fast {
   animation: fadeIn 1.5s 1.5s forwards;
 }
 
@@ -48,7 +66,29 @@
 }
 
 .animate-slideIn-fast {
+  transform: translateY(50px);
+  opacity: 0;
   animation: slideIn 1s 1s forwards;
+}
+
+.animate-staggredSlideIn {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  animation: staggaredSlideIn 1s ease forwards;
+}
+
+@keyframes staggaredSlideIn {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
 }
 
 @keyframes fadeIn {

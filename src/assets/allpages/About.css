@@ -3,12 +3,15 @@
 .about {
   height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 .about-image {
   opacity: 0;
   text-align: center;
 }
+
 
 .flags {
   opacity: 0;
@@ -18,13 +21,14 @@
 
 .mexflag,
 .usflag {
-  margin: 0 10px; /* Adjust the margin value to increase or decrease the separation */
+  margin: 4em 10px; /* Adjust the margin value to increase or decrease the separation */
 }
 
 .avatar {
   align-content: center;
   width: 400px;
   height: auto;
+  border-radius: 10px;
 }
 
 .location {
@@ -42,7 +46,7 @@
 }
 
 .about-details p {
-  margin: 1rem auto;
+  margin: 1em auto;
   opacity: 0;
   font-size: 1em;
 }
@@ -132,12 +136,17 @@
     margin-top: 10px;
     font-size: smaller;
   }
-  .about-image.animate-slideIn {
-    animation-delay: 200ms;
+  .about-image.animate-slideIn-fast {
+    animation-delay: 500ms;
   }
 
   .about-heading::before, 
   .about-heading::after {
     animation-delay: 300ms;
+  }
+
+  .mexflag,
+  .usflag {
+    margin: 0 10px;
   }
 }
