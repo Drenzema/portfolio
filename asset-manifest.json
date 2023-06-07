@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e65cd928.css",
+    "main.js": "/portfolio/static/js/main.5dd952dd.js",
+    "static/media/Pixzels.png": "/portfolio/static/media/Pixzels.4c3e25c1d84a83e1d2bb.png",
+    "static/media/statsGG.png": "/portfolio/static/media/statsGG.8c5a818fbd315c050058.png",
+    "static/media/grocery.png": "/portfolio/static/media/grocery.8cbdf3b39eca71c63e8d.png",
+    "static/media/pic-me.jpeg": "/portfolio/static/media/pic-me.145f374b84776e5656f8.jpeg",
+    "static/media/stitch.png": "/portfolio/static/media/stitch.e8eb4d5987f0ad72e18a.png",
+    "static/media/image 5.png": "/portfolio/static/media/image 5.fa2e24d896d564c1df17.png",
+    "static/media/image 6.png": "/portfolio/static/media/image 6.1e731aa69c9814a566dd.png",
+    "static/media/location.svg": "/portfolio/static/media/location.b577d9a87d95d66ddff505e5d212e778.svg",
+    "static/media/american-flag.svg": "/portfolio/static/media/american-flag.f4060d6609089c7ed80cb24ec69265fa.svg",
+    "static/media/mexican-flag.svg": "/portfolio/static/media/mexican-flag.9c2f07968d9a9c72d6fdc953a631ee8d.svg",
+    "index.html": "/portfolio/index.html",
+    "main.e65cd928.css.map": "/portfolio/static/css/main.e65cd928.css.map",
+    "main.5dd952dd.js.map": "/portfolio/static/js/main.5dd952dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e65cd928.css",
+    "static/js/main.5dd952dd.js"
+  ]
+}
