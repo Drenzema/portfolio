@@ -7,5 +7,8 @@ Make sure you got Git, Node and npm installed.
 Then, simply git clone and run npm install for the dependencies.
 
 # Server
-As per usual server can be run with a simple npm run.
+As per usual server can be booted up with with a simple npm run.
+
+# Link to portfolio website
+https://drenzema.github.io/portfolio/
 
